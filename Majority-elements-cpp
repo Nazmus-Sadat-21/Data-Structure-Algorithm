@@ -1,3 +1,5 @@
+
+// major elements means An element is a major element if it appears more than n/2 times.
 #include<iostream>
 using namespace std;
 int main(){
