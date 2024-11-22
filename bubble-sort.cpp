@@ -5,14 +5,14 @@ int main (){
     cout<<"Enter array size = ";
     cin>>n;
     int arr[n];
-    bool sawping;
+    bool sawping=false;
 
     for(int i =0;i<n;i++){
         cin>>arr[i];
     }
 
     for(int k =0;k<n-1;k++){
-        sawping = false;
+        
         for(int j =0;j<n-k-1;j++){
             if(arr[j]>arr[j+1]){
                 swap(arr[j],arr[j+1]);
