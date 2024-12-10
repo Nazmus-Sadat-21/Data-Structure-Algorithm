@@ -11,11 +11,11 @@ int main(){
     cout<<"Enter a string = ";
     cin>>s;
     int sum = 0;
-    for(int i=0;i<s.length();i++){
+    for(int i=0;i<s.length()-1;i++){
         int diff=0;
-        if(i==s.length()-1){
-            s[i]=0;
-        }
+        // if(i==s.length()-1){
+        //     s[i]=0;
+        // }
         diff= (s[i]-s[i+1]);
         if(diff<0){
             diff=-diff;
