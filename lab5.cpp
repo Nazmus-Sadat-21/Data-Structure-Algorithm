@@ -103,10 +103,14 @@ int main(){
     younger_details(s,younger,n);
 
     cout<<endl;
+    string game;
+    cout<<"Enter a name of game = ";
+    cin>>game;
+    cout<<endl;
     int count=0;
     cout<<"The number of players participating in a specific game : ";
     for(int i=0;i<n;i++){
-        if(s[i].game_name!=arr_game[i+1]){
+        if(s[i].game_name==game){
             count++;
         }
     }
