@@ -7,14 +7,14 @@ int main(){
     cout<<"The sorted array : "<<endl;
 
     for(int i=0;i<size-1;i++){   
-        count++; 
+        
         for(int j =i+1;j<size;j++){
             count2++;
             if(arr[j]<arr[i]){
                 int temp = arr[j];
                 arr[j]=arr[i];
                 arr[i]=temp;
-                
+                count++;
             }
         }
     }
