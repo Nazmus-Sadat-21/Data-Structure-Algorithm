@@ -1,27 +1,55 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
 
-    int arr1[]={4,3,5,7,9,10,1,3};
-    int arr2[]={5,4,7,9,10,1};
-    int n=sizeof(arr1)/4;
-    int p=sizeof(arr2)/4;
+int main() {
+    // Initialize two arrays with different sizes
+    int A[] = {1, 2, 3, 4, 5, 6};
+    int B[] = {4, 5, 6, 7, 8};
+    int sizeA = sizeof(A) / sizeof(A[0]);
+    int sizeB = sizeof(B) / sizeof(B[0]);
     int a=0;
     int arr[a]={};
 
-    for(int i=0;i<n;i++){
-        for(int j=0;j<p;j++){
-            if(arr1[i]==arr2[j]){
-                arr[a]=arr2[j];
-                a++;
+    // Track which elements have already been printed
+    bool hasCommon = false;
+
+    cout << "Common elements: ";
+    for (int i = 0; i < sizeA; i++) {
+        bool alreadyPrinted = false;
+
+        // Check if A[i] has already been printed
+        for (int k = 0; k < i; k++) {
+            if (A[i] == A[k]) {
+                alreadyPrinted = true;
+                break;
+            }
+        }
+
+        if (!alreadyPrinted) {
+            // Check if A[i] exists in B
+            for (int j = 0; j < sizeB; j++) {
+                if (A[i] == B[j]) {
+                    arr[a]=A[i];
+                    a++;
+                    hasCommon = true;
+                    break;
+                }
             }
         }
     }
-    
-    cout<<"Common elements are : ";
-   
-    for(int x=0;x<a;x++ ){
-        cout<<arr[x]<<" ";
+
+    if (!hasCommon) {
+        cout << "No common element!";
+    }
+    else{
+        cout<<"Common elements are : ";
+        for(int x=0;x<a;x++ ){
+            
+            cout<<arr[x]<<" ";
+            
+        }
+
     }
 
+    
 }
