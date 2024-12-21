@@ -29,6 +29,8 @@ void enqueue(int value)
         rear++;
         queue[rear] = value;
         cout << "Enqueued: " << value << endl;
+
+        
     }
 }
 
