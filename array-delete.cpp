@@ -10,8 +10,8 @@ int main(){
     }
     cout<<endl;
 
-    for(int i=2;i<4;i++){
-        arr[i]=arr[i+1];
+    for(int j=2;j<4;j++){
+        arr[j]=arr[j+1];
     }
     cout<<"New array : "<<endl;
     for(int i =0;i<4;i++){
