@@ -17,6 +17,9 @@ void display(string name,double cg,string dept){
     cout<<"Name = "<<name<<endl;
     cout<<"CGPA = "<<cg<<endl;
     cout<<"Department = "<<dept<<endl;
+
+
+    
 }
 
 int main(){
