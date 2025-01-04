@@ -13,6 +13,9 @@ int main(){
     while(st<=end){
         int mid = (st+end)/2;
 
+
+        
+
         if(target==arr[mid]){
          cout<<target<<" value exist in "<<mid<<" no index";
           break;
