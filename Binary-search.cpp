@@ -14,6 +14,8 @@ int main(){
         int mid = (st+end)/2;
 
 
+
+
         
 
         if(target==arr[mid]){
