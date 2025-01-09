@@ -14,4 +14,7 @@ int main(){
     int target = 3;
 
     solution(num,target);
+
+
+    
 }
