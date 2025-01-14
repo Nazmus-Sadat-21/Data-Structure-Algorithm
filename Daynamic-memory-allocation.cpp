@@ -9,6 +9,8 @@ int main(){
     for(i=0;i<n;i++){
         cin>>*(ptr+i);//ptr[i]
         sum+=*(ptr+i);
+
+        
     }
 
     cout<<"total = "<<sum;
