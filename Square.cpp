@@ -14,6 +14,8 @@ int main(){
     cout<<endl;
     Squarenum(n);
 
+      
+
 
 
     
