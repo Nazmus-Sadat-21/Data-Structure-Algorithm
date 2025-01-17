@@ -16,6 +16,8 @@ void display(Employee_info s[],int n){
             cout<<"Join Date : "<<s[i].join<<endl;
             cout<<"Age : "<<s[i].age<<endl;
             cout<<endl;
+
+             
             
         }
     }
