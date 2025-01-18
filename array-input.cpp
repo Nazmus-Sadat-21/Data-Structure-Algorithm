@@ -18,5 +18,6 @@ int main(){
         cout<<arr[k]<<endl;
     }
     return 0 ;
+    
 
 }
