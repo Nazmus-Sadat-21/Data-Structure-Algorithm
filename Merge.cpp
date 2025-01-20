@@ -24,4 +24,6 @@ int main(){
     for(int m=0;m<a;m++){
         cout<<arr[m]<<" ";
     }
+
+    
 }
