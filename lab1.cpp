@@ -10,6 +10,9 @@ int main(){
         cout<<arr[i]<<" ";
     }
 
+
+    
+
     cout<<endl;
     cout<<"Reverse order : "<<endl;
     for(int i = size-1 ;i>=0;i--){
