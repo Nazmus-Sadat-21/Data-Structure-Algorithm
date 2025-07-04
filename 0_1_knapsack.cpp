@@ -8,6 +8,8 @@ int max(int a, int b) {
         return b;
 }
 
+
+
 int knapsack(int W, int wt[], int val[], int n) {
     int dp[100][100]; 
 
