@@ -6,7 +6,6 @@ const int MAX_VERTICES = 100; // Maximum number of vertices
 // Graph representation using an adjacency matrix
 int graph[MAX_VERTICES][MAX_VERTICES];
 bool visited[MAX_VERTICES];
-
 // Stack implementation for DFS
 int stack[MAX_VERTICES];
 int top = -1;
