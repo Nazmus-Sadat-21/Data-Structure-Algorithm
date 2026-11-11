@@ -13,6 +13,5 @@ int main(){
 
     cout<<"total = "<<sum;
     delete [] ptr;
-
     
 }
