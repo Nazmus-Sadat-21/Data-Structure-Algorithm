@@ -11,8 +11,6 @@ bool visited[MAX_VERTICES];
 int queue[MAX_VERTICES];
 int front = -1, rear = -1;
 
-
-
 void enqueue(int node) {
     if (rear == MAX_VERTICES - 1) {
         cout << "Queue overflow!" << endl;
